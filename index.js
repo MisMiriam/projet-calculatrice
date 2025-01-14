@@ -30,7 +30,7 @@ function appendToDisplay(input){
 }
 /** Le bouton clické affiche la valeur dans la fenêtre de la calculatrice
  * 
- * @param {Array} button - Le bouton a clické
+ * @param {Array} button - Le bouton a cliqué
  * @param {String} textBtn - L'intitulé' du bouton
  */
 function btnClicked(button, textBtn){
