@@ -28,7 +28,7 @@ function init(){
 function appendToDisplay(input){
     display.value += input;
 }
-/** Le bouton clické affiche la valeur dans la fenêtre de la calculatrice
+/** Le bouton cliqué affiche la valeur dans la fenêtre de la calculatrice
  * 
  * @param {Array} button - Le bouton a cliqué
  * @param {String} textBtn - L'intitulé' du bouton
