@@ -1,10 +1,10 @@
 // Variables
-const display = document.getElementById("display");
-const equalBtn = document.getElementById("equal-btn");
-const clearBtn = document.getElementById("clear-btn");
-const removeBtn = document.getElementById("remove-btn");
-let numberBtns = document.querySelectorAll(".number-btn");
-let operateurBtns = document.querySelectorAll(".operator-btn");
+const display = document.querySelector(".calc__display");
+const equalBtn = document.querySelector(".btn__equal");
+const clearBtn = document.querySelector(".btn__clear");
+const removeBtn = document.querySelector(".btn__remove");
+let numberBtns = document.querySelectorAll(".btn__number");
+let operateurBtns = document.querySelectorAll(".btn__operator");
 // Initialisation
 init();
 // Fonctions

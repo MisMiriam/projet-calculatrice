@@ -1,0 +1,107 @@
+// Variables
+$bodyCalc-color: hsl(102, 87%, 76%);
+$btn-color: hsl(105, 100%, 86%);
+$number-color: hsl(148, 35%, 49%);
+$operateur-color: hsl(214, 31%, 26%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: $number-color;
+    text-align: center;
+    margin: 10px 0;
+}
+.calc {
+    background-color: $bodyCalc-color;
+    border-radius: 15px;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    &__display {
+        width: 100%;
+        padding: 20px;
+        border: none;
+        font-size: 3em;
+        text-align: left;
+        color: $number-color;
+        background-color: $btn-color;
+    }
+
+    &__keys{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin: 10px auto;
+    }
+}
+button{
+    width: 2em;
+    height: 2em;
+    border-radius: 50px;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: $btn-color;
+
+    &.btn__number{
+        color: $number-color;
+    }
+
+    &.btn__operator{
+        color: $operateur-color;
+    }
+
+    &.btn__clear{
+        color: red;
+    }
+
+    &:hover{
+        background-color: $btn-color;
+        filter: brightness(110%);
+    }
+
+    &:active{
+        background-color: $btn-color;
+        filter: brightness(90%);
+    }
+
+    &.btn__equal{
+        background-color: $operateur-color;
+        color: white;
+
+        &:hover{
+            background-color: $operateur-color;
+            filter: brightness(150%);
+        }
+
+        &:active{
+            background-color: $operateur-color;
+            filter: brightness(50%);
+        }
+    }
+}
+/* ************************************************ */
+/* Responsive */
+/* petit mobile - petite tablette */
+@media (max-width: 375px) {
+        .calc{
+            max-width: 250px;
+            &__display{
+                padding: 10px;
+                font-size: 1.5em;
+            }
+            &__keys{
+                margin: 5px auto;
+            }
+        }
+        button{
+            width: 1.5em;
+            height: 1.5em;
+            font-size: 2em;
+        }
+}

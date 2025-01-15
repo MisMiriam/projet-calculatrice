@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: hsl(148, 35%, 49%);
+  text-align: center;
+  margin: 10px 0;
+}
+
+.calc {
+  background-color: hsl(102, 87%, 76%);
+  border-radius: 15px;
+  max-width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.calc__display {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  font-size: 3em;
+  text-align: left;
+  color: hsl(148, 35%, 49%);
+  background-color: hsl(105, 100%, 86%);
+}
+.calc__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin: 10px auto;
+}
+
+button {
+  width: 2em;
+  height: 2em;
+  border-radius: 50px;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: hsl(105, 100%, 86%);
+}
+button.btn__number {
+  color: hsl(148, 35%, 49%);
+}
+button.btn__operator {
+  color: hsl(214, 31%, 26%);
+}
+button.btn__clear {
+  color: red;
+}
+button:hover {
+  background-color: hsl(105, 100%, 86%);
+  filter: brightness(110%);
+}
+button:active {
+  background-color: hsl(105, 100%, 86%);
+  filter: brightness(90%);
+}
+button.btn__equal {
+  background-color: hsl(214, 31%, 26%);
+  color: white;
+}
+button.btn__equal:hover {
+  background-color: hsl(214, 31%, 26%);
+  filter: brightness(150%);
+}
+button.btn__equal:active {
+  background-color: hsl(214, 31%, 26%);
+  filter: brightness(50%);
+}
+
+/* ************************************************ */
+/* Responsive */
+/* petit mobile - petite tablette */
+@media (max-width: 375px) {
+  .calc {
+    max-width: 250px;
+  }
+  .calc__display {
+    padding: 10px;
+    font-size: 1.5em;
+  }
+  .calc__keys {
+    margin: 5px auto;
+  }
+  button {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+  }
+}/*# sourceMappingURL=style.css.map */
