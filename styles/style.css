@@ -13,7 +13,7 @@ h1 {
 .calc {
   background-color: hsl(102, 87%, 76%);
   border-radius: 15px;
-  max-width: 300px;
+  max-width: 350px;
   overflow: hidden;
   margin: 0 auto;
 }
